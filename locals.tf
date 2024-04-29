@@ -30,18 +30,19 @@ output "printcity"{
 output "secondprint"{
     value = local.forum
 }
-output "printlandmark1"{
+output "printlenghtlandmark1"{
     value = local.landmark1
 }
-output "printlandmark2"{
+output "printlenghtlandmark2"{
     value = local.landmark2
 }
-output "printlandmark3"{
+output "printlenghtlandmark3"{
     value = local.landmark3
 }
-output "printlandmark4"{
+output "printlenghtlandmark4"{
     value = local.landmark4
 }
-output "printlandmark5"{
+output "printlenghtlandmark5"{
     value = local.landmark5
 }
+
