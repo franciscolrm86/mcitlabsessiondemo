@@ -31,18 +31,18 @@ output "secondprint"{
     value = local.forum
 }
 output "printlengthlandmark1"{
-    value = local.landmark1
+    value = local.lengthlandmark1
 }
 output "printlengthlandmark2"{
-    value = local.landmark2
+    value = local.lengthlandmark2
 }
 output "printlengthlandmark3"{
-    value = local.landmark3
+    value = local.lengthlandmark3
 }
 output "printlengthlandmark4"{
-    value = local.landmark4
+    value = local.lengthlandmark4
 }
 output "printlengthlandmark5"{
-    value = local.landmark5
+    value = local.lengthlandmark5
 }
 
