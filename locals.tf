@@ -4,11 +4,11 @@ locals{
 firstname="francisco"
 lastname="rodriguez"
 city="Montreal"
-landmark1 = "oldport"
-landmark2 = "basilica"
-landmark3 = "montroyal"
-landmark4 = "cartierbridge"
-landmark5 = "granderoue"
+landmark1="oldport"
+landmark2="basilica"
+landmark3="montroyal"
+landmark4="cartierbridge"
+landmark5="granderoue"
 }
 output "print"{
     value = local.servicename
