@@ -17,7 +17,7 @@ lengthlandmark2=length(local.landmark2)
 lengthlandmark3=length(local.landmark3)
 lengthlandmark4=length(local.landmark4)
 lengthlandmark5=length(local.landmark5)
-winterlistofsports=["icehockey","snowboarding","iceskating"]
+wintersportslist=["icehockey","snowboarding","iceskating"]
 }
 output "print"{
 value = local.servicename
@@ -71,5 +71,5 @@ output "ifelecheck_output"{
 value=var.ifelsecheck
 }
 output "wintersportslist"{
-value=[for sport in local.winterlistofsports:sport]
+value=[for sport in local.wintersportslist:sport]
 }
