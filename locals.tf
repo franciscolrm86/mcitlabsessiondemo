@@ -95,7 +95,7 @@ output "favorite_food"{
 value=[for favorite_food in var.favorite_foods:favorite_food]
 }
 output "sumofthreenumbers"{
-value=sum([for numberoutput in local.total_output:totalnumber(numberoutput)])
+value=sum([for numberoutput in local.total_output:tonumber(numberoutput)])
 }
 output "sumofallnumbers"{
 value=sum([for listofnumbers in local.listofnumbers:tonumber(numberoutput)])
