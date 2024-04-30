@@ -18,6 +18,10 @@ lengthlandmark3=length(local.landmark3)
 lengthlandmark4=length(local.landmark4)
 lengthlandmark5=length(local.landmark5)
 wintersportslist=["icehockey","snowboarding","iceskating"]
+universities_in_montreal=["Concordia","UdeM","McGill","UQAM","MCIT"]
+restosinmtl=["mcdonalds","3amigos","scores","sthubert","harveys"]
+total_output=["150","150","150"]
+listOfNumbers=["4","5","1","2","3","4","5"]
 }
 output "print"{
 value = local.servicename
@@ -79,4 +83,20 @@ default=["soccer","basketball","baseball","running"]
 }
 output "summersports"{
 value=[for summersports in var.summersports:summersports]
+}
+output "universities_in_montreal"{
+value=[for universities_in_montreal in local.universities_in_montreal:universities_in_montreal]
+}
+variable"favorite_food"{
+type=list(string)
+default=["chicken","fish","spaguetti","pizza"]
+}
+output "favorite_food"{
+value=[for favorite_food in var.favorite_foods:favorite_food]
+}
+output "sumofthreenumbers"{
+value=sum([for numberoutput in local.total_output:totalnumber(numberoutput)])
+}
+output "sumofallnumbers"{
+value=sum([for listofnumbers in local.listofnumbers:tonumber(numberoutput)])
 }
