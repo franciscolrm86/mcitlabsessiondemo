@@ -73,7 +73,7 @@ value=var.ifelsecheck
 output "wintersportslist"{
 value=[for sport in local.wintersportslist:sport]
 }
-variable "summersports"{
+variable"summersports"{
 type=list(string)
 default=["soccer","basketball","baseball","running"]
 }
