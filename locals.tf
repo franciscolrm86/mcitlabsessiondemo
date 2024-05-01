@@ -92,11 +92,11 @@ type=list(string)
 default=["chicken","fish","spaguetti","pizza"]
 }
 output "favorite_food"{
-value=[for favorite_food in var.favorite_foods:favorite_food]
+value=[for favorite_food in var.favorite_food:favorite_food]
 }
 output "sumofthreenumbers"{
 value=sum([for numberoutput in local.total_output:tonumber(numberoutput)])
 }
-output "sumofallnumbers"{
+output "listofnumbers"{
 value=sum([for listofnumbers in local.listofnumbers:tonumber(numberoutput)])
 }
