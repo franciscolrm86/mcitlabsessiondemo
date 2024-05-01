@@ -21,7 +21,7 @@ wintersportslist=["icehockey","snowboarding","iceskating"]
 universities_in_montreal=["Concordia","UdeM","McGill","UQAM","MCIT"]
 restosinmtl=["mcdonalds","3amigos","scores","sthubert","harveys"]
 total_output=["150","150","150"]
-listOfNumbers=["4","5","1","2","3","4","5"]
+listofnumbers=["4","5","1","2","3","4","5"]
 }
 output "print"{
 value = local.servicename
