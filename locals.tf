@@ -98,5 +98,5 @@ output "sumofthreenumbers"{
 value=sum([for numberoutput in local.total_output:tonumber(numberoutput)])
 }
 output "listofnumbers"{
-value=sum([for listofnumbers in local.listofnumbers:tonumber(numberoutput)])
+value=sum([for listofnumbers in local.listofnumbers:tonumber(listofnumbers)])
 }
