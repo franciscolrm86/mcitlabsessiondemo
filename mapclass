@@ -1,4 +1,4 @@
-# map of string
+//======== map of string
 variable "force_map"{
   type = map(strip)
   default = {
@@ -6,7 +6,7 @@ variable "force_map"{
   yoda = "jedi"
   darth = "sith"
 
-# map of objetc
+//======== map of objetc
 variable "example_map"{
   type = map(objetc({
   name = string
@@ -31,7 +31,7 @@ name = "vader"
 }
 }
 }
-# map of lists
+//======== map of lists
 
 variable "lighsabre_color_map"{
   type = map(list(string))
