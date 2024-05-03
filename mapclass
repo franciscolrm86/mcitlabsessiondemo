@@ -49,4 +49,8 @@ variable "simple_nested_list"{
 simple_local_flatenned_list = flatten(var.simple_nested_list)
 
 output "simple_nested_list"{
-value=flatten(
+value = [for letter in var.siemple_nested_list:letter]
+}
+output "simple_local_flattened_list"{
+value = local.simple_local_flattened_list
+}
