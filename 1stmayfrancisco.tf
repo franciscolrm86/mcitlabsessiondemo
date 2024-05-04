@@ -1,30 +1,30 @@
-variable "original_string" {
+variable "original_string1" {
 default = "Francisco Rodriguez"
 }
-output "string_length" {
-value = length(var.original_string)
+output "string_length1" {
+value = length(var.original_string1)
 }
-output "uppercase_string" {
-value = upper(var.original_string)
+output "uppercase_string1" {
+value = upper(var.original_string1)
 } 
-output "lowercase_string" {
-value = lower(var.original_string)
+output "lowercase_string1" {
+value = lower(var.original_string1)
 }
-output "replaced_string" {
-value = replace(var.original_string, "Francisco","Rodriguez")
+output "replaced_string1" {
+value = replace(var.original_string1, "Francisco","Rodriguez")
 }
-variable "string_list" {
+variable "string_list1" {
 default = ["Francisco","Rodriguez"]
 }
-output "join_name" {
-value = join("",var.string_list)
+output "join_name1" {
+value = join("",var.string_list1)
 }
-variable "additional_string" {
+variable "additional_string1" {
 default = "from Nicaragua"
 }
-output "concatenated_string" {
-value = "${var.original_string}${var.additional_string}"
+output "concatenated_string1" {
+value = "${var.original_string1}${var.additional_string1}"
 }
-output "substring_example" {
-value = substr(var.original_string, 3, -1)
+output "substring_example1" {
+value = substr(var.original_string1, 3, -1)
 }
