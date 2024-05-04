@@ -1,53 +1,9 @@
-//======== map of string
-variable "force_map"{
-  type = map(strip)
-  default = {
-  luke = "jedi"
-  yoda = "jedi"
-  darth = "sith"
-
-//======== map of objetc
-variable "example_map"{
-  type = map(objetc({
-  name = string
-  enemies_destroyed = number
-  badguy = bool
-}))
-default = {
-  key1 = {
-name = "luke"
-  enemies_destroyed = 4252
-  badguy = false
+locals{
+simple_local_flatenned_list = flatten(var.simple_nested_list)
 }
-key2 = {
-name = "yoda"
-  enemies_destroyed = 900
-  badguy = false
-}
-key3 = {
-name = "vader"
-  enemies_destroyed = 90000000
-  badguy = true
-}
-}
-}
-//======== map of lists
-
-variable "lighsabre_color_map"{
-  type = map(list(string))
-default = {
-  luke = ["green", "blue"]
-  yoda = ["green"]
-  vader = ["red"]
-}
-}
-
 variable "simple_nested_list"{
   type = list(list(string))
   default = [["a", "b"], ["c", "d"], ["e", "f"]]
-}
-locals{
-simple_local_flatenned_list = flatten(var.simple_nested_list)
 }
 output "simple_nested_list"{
 value = [for letter in var.simple_nested_list:letter]
