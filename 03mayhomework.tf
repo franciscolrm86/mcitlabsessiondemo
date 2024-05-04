@@ -9,5 +9,5 @@ variable "countries2visit"{
 default = ["Spain", "France", "Italy", "Netherlands", "Germany"]
 }
 output "join_countries"{
-value = join("+", var.countries2visit"
+value = join("+", var.countries2visit")
 }
