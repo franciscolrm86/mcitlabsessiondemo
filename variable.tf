@@ -46,5 +46,4 @@ variable "environment"{
 }
 variable "resource_group_name"{
 default = "xmen97"
-location = "sweden"
 }
