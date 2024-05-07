@@ -45,5 +45,6 @@ variable "environment"{
  default="staging"
 }
 variable "resource_group_name"{
+type = string
 default = "xmen97"
 }
