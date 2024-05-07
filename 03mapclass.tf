@@ -9,5 +9,5 @@ output "simple_nested_list"{
 value = [for letter in var.simple_nested_list:letter]
 }
 output "simple_local_flattened_list"{
-value = local.simple_local_flattened_list
+value = local.simple_local_flatenned_list
 }
