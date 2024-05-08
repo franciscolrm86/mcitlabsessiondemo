@@ -1,9 +1,9 @@
-resource "azurerm_resource_group" "xmen97"{
-name = "xmen97"
+resource "azurerm_resource_group" "xmen"{
+name = "xmen"
 location = "Canada Central"
 }
-resource "azurerm_resource_group" "xmen97"{
-name = "xmen97"
+resource "azurerm_resource_group" "xmen"{
+name = "xmen"
 location = "Sweden"
 }
 resource "azurerm_kubernetes_cluster" "Storm" {
