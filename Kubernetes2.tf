@@ -1,5 +1,5 @@
 locals{
-cluster_names=["Storm","Wolverine","Beast","Jean","Gambit"]
+cluster_names=["Storm","Wolverine","Rogue","Jean","Gambit"]
 }
 resource "azurerm_resource_group" "xmen97"{
 name = "xmen97"
@@ -9,11 +9,11 @@ resource "azurerm_resource_group" "xmen97"{
 name = "xmen97"
 location = "Sweden"
 }
-resource "azurerm_kubernetes_cluster" "Rogue1" {
-  name                = "Rogue1"
+resource "azurerm_kubernetes_cluster" "Storm" {
+  name                = "Storm"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "Rogue1"
+  dns_prefix          = "Storm"
   default_node_pool {
     name       = "default"
     node_count = 1
@@ -26,11 +26,11 @@ resource "azurerm_kubernetes_cluster" "Rogue1" {
     Environment = "Production"
   }
 }
-resource "azurerm_kubernetes_cluster" "Storm2" {
-  name                = "Storm2"
+resource "azurerm_kubernetes_cluster" "Wolverine" {
+  name                = "Wolverine"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "Storm2"
+  dns_prefix          = "Wolverine"
   default_node_pool {
     name       = "default"
     node_count = 1
@@ -43,11 +43,11 @@ resource "azurerm_kubernetes_cluster" "Storm2" {
     Environment = "Production"
   }
 }
-resource "azurerm_kubernetes_cluster" "Gambit3" {
-  name                = "Gambit3"
+resource "azurerm_kubernetes_cluster" "Rogue" {
+  name                = "Rogue"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "Gambit3"
+  dns_prefix          = "Rogue"
   default_node_pool {
     name       = "default"
     node_count = 1
@@ -60,11 +60,11 @@ resource "azurerm_kubernetes_cluster" "Gambit3" {
     Environment = "Production"
   }
 }
-resource "azurerm_kubernetes_cluster" "Jean4" {
-  name                = "Jean4"
+resource "azurerm_kubernetes_cluster" "Jean" {
+  name                = "Jean"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "Jean4"
+  dns_prefix          = "Jean"
   default_node_pool {
     name       = "default"
     node_count = 1
@@ -77,11 +77,11 @@ resource "azurerm_kubernetes_cluster" "Jean4" {
     Environment = "Production"
   }
 }
-resource "azurerm_kubernetes_cluster" "Wolverine5" {
-  name                = "Wolverine5"
+resource "azurerm_kubernetes_cluster" "Gambit" {
+  name                = "Gambit"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
-  dns_prefix          = "Wolverine5"
+  dns_prefix          = "Gambit"
   default_node_pool {
     name       = "default"
     node_count = 1
