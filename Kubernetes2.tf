@@ -4,8 +4,8 @@ location = "Canada Central"
 }
 resource "azurerm_kubernetes_cluster" "Storm" {
   name                = "Storm"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.xmen.location
+  resource_group_name = azurerm_resource_group.xmen.name
   dns_prefix          = "Storm"
   default_node_pool {
     name       = "default"
@@ -21,8 +21,8 @@ resource "azurerm_kubernetes_cluster" "Storm" {
 }
 resource "azurerm_kubernetes_cluster" "Wolverine" {
   name                = "Wolverine"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.xmen.location
+  resource_group_name = azurerm_resource_group.xmen.name
   dns_prefix          = "Wolverine"
   default_node_pool {
     name       = "default"
@@ -38,8 +38,8 @@ resource "azurerm_kubernetes_cluster" "Wolverine" {
 }
 resource "azurerm_kubernetes_cluster" "Rogue" {
   name                = "Rogue"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.xmen.location
+  resource_group_name = azurerm_resource_group.xmen.name
   dns_prefix          = "Rogue"
   default_node_pool {
     name       = "default"
@@ -55,8 +55,8 @@ resource "azurerm_kubernetes_cluster" "Rogue" {
 }
 resource "azurerm_kubernetes_cluster" "Jean" {
   name                = "Jean"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.xmen.location
+  resource_group_name = azurerm_resource_group.xmen.name
   dns_prefix          = "Jean"
   default_node_pool {
     name       = "default"
@@ -72,8 +72,8 @@ resource "azurerm_kubernetes_cluster" "Jean" {
 }
 resource "azurerm_kubernetes_cluster" "Gambit" {
   name                = "Gambit"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.xmen.location
+  resource_group_name = azurerm_resource_group.xmen.name
   dns_prefix          = "Gambit"
   default_node_pool {
     name       = "default"
