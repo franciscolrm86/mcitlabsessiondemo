@@ -48,3 +48,11 @@ variable "resource_group_name"{
 type = string
 default = "xmen97"
 }
+variable "classworkclusters"{
+type =list(string)
+default=["montreal","toronto","vancouver","alberta"]
+}
+variable "dnsprefix"{
+type=string
+default="mcitdns"
+}
